@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Selectores</title>
+</head>
+
+<body>
+
+<button>Click</button>
+<div id="texto1">Texto 1</div>
+<div id="texto2">Texto 2</div>
+<div id="texto3">Texto 3</div>
+<br><br>
+
+<input id="txt" type="text">
+<input id="btn" type="submit" value="Enviar"> 
+
+<script>
+
+
+    $(document).ready(function(){
+        $("button").click(function(){
+            //Elimana el id texto2
+            //$("#texto2").hide();
+
+            //Elimina todos los elementos
+            $("*").hide()
+        });
+
+        //Mensaje btn
+        $("#btn").click(function(){
+            var x = $("#txt").val();
+            alert(x);
+        });
+    });
+
+</script>
+
+</body>
+</html>

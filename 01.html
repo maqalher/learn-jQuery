@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Aprendiendo jQuery</title>
+</head>
+
+<body>
+
+<div id="codigo">Codigo Mentor</div>
+
+<script>
+    /*Formas de Declarar jQuery*/
+    /* 
+    1
+    $(document).on("ready", function(){
+
+    });
+
+    2
+    $(document).ready(function(){
+
+    });
+
+    3
+    $(function(){
+
+    });
+    */
+
+    $(document).ready(function(){
+        $("#codigo").hide(3000).show(1000);
+    });
+
+</script>
+
+</body>
+</html>
