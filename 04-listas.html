@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Listas</title>
+</head>
+
+<body>
+
+<p>Lista 1</p>
+<ul>
+	<li>Rojo</li>
+	<li>Azul</li>
+	<li>Verde</li>
+</ul>
+
+<p>Lista 2</p>
+<ul>
+	<li>Uno</li>
+	<li>Dos</li>
+	<li>Tres</li>
+</ul>
+
+<button>Enviar</button>
+
+<script>
+
+
+    $(document).ready(function(){
+       
+       $("button").click(function(){
+       		//oculatar el pimer elemento de la lista
+       		//$("ul li:first").hide();
+
+       		//ocultar los primeros hijos de las listas
+       		//$("ul li:first-child").hide();
+
+       		//ociltar los ultimos hijos de las listas
+       		$("ul li:last-child").hide()
+       });
+    });
+
+</script>
+
+</body>
+</html>
